@@ -23,6 +23,7 @@
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6S20N65YMF"></script>
+<script src="https://kit.fontawesome.com/2d1a14660a.js" crossorigin="anonymous"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -37,11 +38,10 @@
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <div class="navbar-header page-scroll">                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <img src="content/img/Content/Logo.png" class="navbar-brand" href="#page-top">
+                <img src="content/img/logo/Logo - Transparent.png" class="navbar-brand" href="#page-top">
                 <a class="navbar-brand" href="#page-top">Ryan Chisholm</a>
             </div>
 
@@ -50,244 +50,277 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
+                    </li>                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#experience">Experience</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About Me</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
+    </nav>    <!-- Header -->
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="content/img/Circular Profile.png" alt="" width="380">
-                    <div class="intro-text">
-                        <br/>
-                        <br/>
-                        <span class="name"><img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=700&size=25&pause=1000&color=F7F7F7&center=true&height=40&width=600&lines=Welcome+to+My+Webpage;Click on 'Portfolio' to see my Projects " alt="Typing SVG" />
+            <div class="row header-content">
+                <div class="col-md-7">                    <div class="intro-text">                        <span class="name">
+                            <h1 class="intro-heading">> Hi, I'm Ryan Chisholm</h1>
+                            <img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=30&pause=1000&color=007BFF&center=false&height=45&width=600&lines=%3E+Systems+Analyst;%3E+Mainframe+Enthusiast;%3E+University+Student" alt="Typing SVG" />
                         </span>
-                        <hr class="star-light">
-                        <span class="skills">
-                            <p>Software Developer - University Student <br>
-                            Computer Science at Wilfrid Laurier University</p>
-                            <a>Frontend, Backend, Web and Mobile Developer</a>
+                        <div class="intro-divider"></div>
+                        <span class="skills">                            <p>Computer Science and Business @ Wilfrid Laurier University
+                            <br>Technical Systems Analyst @ RBC
+                            <br>Passionate about Mainframe and Cybersecurity</p>
+                            <div class="contact-info">
+                                <p><i class="fa fa-envelope"></i> RyanChisholmMW@gmail.com</p>
+                                <p><i class="fa fa-phone"></i> +1 (416) 571 - 2014</p>
+                            </div>                            <div class="social-links">
+                                <a href="https://github.com/Chisholm6192" class="btn-social-rect btn-outline" title="GitHub">
+                                    <i class="fa fa-fw fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ryan-chisholm-wlu/" class="btn-social-rect btn-outline" title="LinkedIn">
+                                    <i class="fa fa-fw fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="Ryan_Chisholm_Resume.pdf" download class="btn-social btn-outline" title="Download Resume">
+                                    <i class="fa fa-fw fa-file-pdf-o"></i>
+                                </a>
+                            </div>
                         </span>
+                    </div>
+                </div>
+                <div class="col-md-5">                    <div class="profile-image-container">
+                        <img class="img-responsive profile-image" src="content/img/photo/Full_Headshot.jpg" alt="Ryan Chisholm">
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    </header><!-- Projects Section -->    <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Portfolio</h2>
                     <hr class="star-primary">
+                </div>            </div>
+            <div class="portfolio-tabs">
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-category="projects">Projects</button>
+                    <button class="tab-btn" data-category="certifications">Certifications</button>
+                    <button class="tab-btn" data-category="awards">Awards</button>
+                </div>
+                <div class="projects-grid">
+                    <!-- Projects -->
+                    <div class="project-card" data-category="projects">
+                        <a href="#portfolioModal1" class="project-link" data-toggle="modal">
+                            <div class="project-image">
+                                <img src="content/img/portfolio/lcs_logo.png" alt="LCS Mobile App">
+                                <div class="project-overlay">
+                                    <i class="fa fa-external-link"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>LCS Mobile App</h3>
+                                <p>React Native • Firebase</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-card" data-category="projects">
+                        <a href="#portfolioModal2" class="project-link" data-toggle="modal">
+                            <div class="project-image">
+                                <img src="content/img/portfolio/Climate Change Analysis.JPG" alt="Climate Change Analysis">
+                                <div class="project-overlay">
+                                    <i class="fa fa-external-link"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Climate Change Analysis</h3>
+                                <p>R • Data Analytics</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-card" data-category="projects">
+                        <a href="#portfolioModal3" class="project-link" data-toggle="modal">
+                            <div class="project-image">
+                                <img src="content/img/portfolio/2048.png" alt="2048 Game">
+                                <div class="project-overlay">
+                                    <i class="fa fa-external-link"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>2048 Game</h3>
+                                <p>Java • Swing</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-card" data-category="projects">
+                        <a href="#portfolioModal4" class="project-link" data-toggle="modal">
+                            <div class="project-image">
+                                <img src="content/img/portfolio/ExTracker.png" alt="Expenses Tracker">
+                                <div class="project-overlay">
+                                    <i class="fa fa-external-link"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Expenses Tracker</h3>
+                                <p>React • Next.js</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- Experience Section -->
+    <section id="experience" class="success">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Experience</h2>
+                    <hr class="star-light blue">
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i> <br><br>
-                                Laurier Computing Society <br>Mobile App
-                                <br>
-                                <br>
-                            </div>
+                <!-- RBC Developer -->
+                <div class="col-md-6">
+                    <div class="experience-card">
+                        <div class="title">Technical Systems Analyst - Credit System Services</div>
+                        <div class="company">Royal Bank of Canada (RBC)</div>
+                        <div class="duration">May 2025 - Present</div>
+                        <div class="description">
+                            • Automated variety of processes through Github Actions workflows, using javascript and yml<br>
+                            • Built jobs to automate checks before deployment and releases<br>
+                            • Wrote automations to increase security checks for ServiceNow requests
                         </div>
-                        <img src="content/img/portfolio/lcs_logo.png" class="img-responsive" alt="" width='400'>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i> <br><br>
-                                Climate Change Analysis <br>Data Analytics
-                            </div>
+                
+                <!-- RBC Systems Analyst -->
+                <div class="col-md-6">
+                    <div class="experience-card">
+                        <div class="title">Technical Systems Analyst - Mainframe Operating Systems</div>
+                        <div class="company">Royal Bank of Canada (RBC)</div>
+                        <div class="duration">Sept 2024 - Dec 2024</div>
+                        <div class="description">
+                            • Managed and maintained critical mainframe systems and applications<br>
+                            • Implemented changes and fixes to development and production environments<br>
+                            • Utilized JCL, REXX, and COBOL to create jobs to run on IBM's Z16 system<br>
+                            • Automated tasks for production applications such as DB2 and IMS, using python <br>
+                            • Migrated outdated products to new versions of COBOL and z/OS
                         </div>
-                        <img src="content/img/portfolio/Climate Change Analysis.JPG" class="img-responsive" alt="" style="border:5px solid #2C3E50;">
-                    </a>
+                    </div>
                 </div>
-                <!-- Remaining Portfolio Models -->
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i> <br><br>
-                                2048 Game 
-                                <br>
-                                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="experience-highlights">
+                        <h4>Key Experience Areas:</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="experience-list">
+                                    <li><i class="fa fa-code"></i>Mainframe Application Development</li>
+                                    <li><i class="fa fa-terminal"></i>Systems Programming</li>
+                                    <li><i class="fa fa-database"></i>Database Architecture</li>
+                                    <li><i class="fa fa-tower-broadcast"></i>Computer Networks</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="experience-list">
+                                    <li><i class="fa fa-sitemap"></i>System Architecture</li>
+                                    <li><i class="fa fa-bar-chart"></i>Data Analytics</li>
+                                    <li><i class="fa fa-cloud"></i>Cloud Engineering</li>
+                                    <li><i class="fa fa-cogs"></i>Automation</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="experience-list">
+                                </ul>
                             </div>
                         </div>
-                        <img src="content/img/portfolio/2048.png" class="img-responsive" alt="" width="400" height="0">
-                    </a>
+                    </div>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i> <br> <br>
-                                Expenses Tracker <br> WebApp
-                            </div>
-                        </div>
-                        <img src="content/img/portfolio/ExTracker.png" class="img-responsive" width="400" alt="">
-                    </a>
-                </div>
-                <!--<div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i> <br>
-                                Battleship
-                                <br>
-                                <br>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/battleship.png" class="img-responsive" alt="" style="border:5px solid #2C3E50;" width="500" heigh="100">
-                    </a>
-                </div>-->
-                <!--<div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
-                </div>-->
             </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section class="success" id="about">
-        <div class="container">
-            <div class="row">
+        <div class="container">            <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
+                    <h2>About Me</h2>
+                    <hr class="star-light blue">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>I grew up in Milton, Ontario and I am currently a third year student at <b>Wilfrid Laurier University</b>, pursuing an honors BSc in Computer Science with co-op. I have a passion for technology and software. In my spare time I enjoy building webapps and learning new frameworks and technologies.</p>
-                    <p>  
-                        <br>Skills:<br>
-                        Languages
-                        <ul>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>Python</li>
-                            <li>C#</li>
-                            <li>C++</li>
-                            <li>HTML and CSS</li>
-                            <li>R</li>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-lg-6">
+                    <p>I grew up in Milton, Ontario and I am currently a fourth year student at <b>Wilfrid Laurier University</b>, pursuing an honors BSc in Computer Science with a minor in Business. I am currently working at <b>RBC</b> in Toronto, Ontario as a <b>Technical Systems Analyst</b> on the Credit Systems Services team, under the Cloud Engineering designation. I have a passion for infrastructure, architecture and mainframes. In my spare time I try to complete new certifications and further my knowledge of mainframes, systems analysis, databases, and cybersecurity.</p>
+                    <div class="experience-highlights">
+                        <h4>Knowledge Skills</h4>
+                        <ul class="experience-list">
+                            <li><i class="fa fa-terminal"></i>Mainframe</li>
+                            <li><i class="fa fa-sitemap"></i>Systems Architecture and Adminstration</li>
+                            <li><i class="fa fa-cloud"></i>Cloud Engineering</li>
+                            <li><i class="fa fa-shield-halved"></i>Cybersecurity</li>
+                            <li><i class="fa fa-tower-broadcast"></i>Computer Networks</li>
+                            <li><i class="fa fa-database"></i>Databases</li>
+                            <li><i class="fa fa-copy"></i>Consulting</li>
+                            <li><i class="fa fa-bar-chart"></i>Analytics</li>
                         </ul>
-                    </p>
-                    <p>
-                        Technologies:
-                        <ul class="list-inline">
-                            <li>Firebase</li>
-                            <li>MongoDB</li>
-                            <li>Expo CLI</li>
-                            <li>VS Code</li>
-                            <li>Android Studio</li>
-                            <li>Primsa</li>
-                            <li>Eclispe</li>
-                            <li>IntelliJ Idea</li>
-                            <li>PyCharm</li>
-                        </ul>
-                    </p>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <p>I have experience working in Backend and Fullstack development environments in my time with the Laurier Computing Society, Computing Councils of Canada and GoldenHack Hackathon Software Departments. As well as developing an arsenal of new skills and knowledge from my studies and side projects. </p>
-                    <p>    
-                        <br>
-                        <br>
-                        <br> Frameworks and Libraries: <br>
-                            <li>Node.js</li>
-                            <li>Next.js</li>
-                            <li>React js and React Native</li>
-                            <li>Express.js</li>
-                            <li>Flask</li>
-                            <li>.NET Core</li>
-                            <li>JQuery</li>
-                            <li>Boostrap</li>
+                <div class="col-lg-6">
+                    <p>I have experience working in systems programming, systems administration, application development, cloud engineering, automation, cybersecurity, database architecture and computer networks from my two co-op terms at RBC. And I have developed a knowledge of algorithms, software architecture and solutions engineering, operating systems, databases and computer networks through my 3 years at Wilfrid Laurier University. And I have developed solid consulting, advising, presentation, communication and financial skills through my minor in Business and case competitions.</p>
+                    <div class="experience-highlights">
+                        <h4>Technical Skills</h4>
+                        <ul class="experience-list">
+                            <li><i class="fa fa-terminal"></i>IBM z/OS, z/VM, z/TPF</li>
+                            <li><i class="fa fa-database"></i>Microsoft Azure, Firebase, MongoDB, DB2, Microsoft Access Database</li>
+                            <li><i class="fa fa-code"></i>COBOL, ARM Assembly, Java, Python, C, SQL, JCL, REXX, VBA</li>
+                            <li><i class="fa fa-layer-group"></i>RACF, TSO, IMS</li>
+                            <li><i class="fa fa-bar-chart"></i>Flask, .NET Core, pandas, react.js</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <!-- <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-
-    <!-- Footer -->
+    <!-- Contact Section -->    <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Contact Me</h3>
-                        <p>RyanChisholmMW@gmail.com
-                            <br>+1 (416) 571 - 2014</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://github.com/Chisholm6192" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/ryan-chisholm-wlu/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://stackoverflow.com/users/20256386/chisholm6192" class="btn-social btn-outline"><i class="fa fa-fw fa-stack-overflow"></i></a>
-                            </li>
+                    <div class="footer-col col-md-6">
+                        <h3>Reach Out</h3>
+                        <p class="contact-info">
+                            <i class="fa fa-envelope"></i> RyanChisholmMW@gmail.com
                             <br>
+                            <i class="fa fa-phone"></i> +1 (416) 571 - 2014
+                        </p>
+                    </div>
+                    <div class="footer-col col-md-6">
+                        <h3>Connect With Me</h3>
+                        <ul class="list-inline social-links">
                             <li>
-                                <a href="https://www.instagram.com/04ryanchisholm/" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+                                <a href="https://github.com/Chisholm6192" class="btn-social btn-outline" title="GitHub">
+                                    <i class="fa fa-fw fa-github"></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="Ryan_Chisholm_Resume.pdf" download class="btn-social btn-outline"><i class="fa fa-fw fa-file-pdf-o"></i></a>
+                                <a href="https://www.linkedin.com/in/ryan-chisholm-wlu/" class="btn-social btn-outline" title="LinkedIn">
+                                    <i class="fa fa-fw fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Ryan_Chisholm_Resume.pdf" download class="btn-social btn-outline" title="Download Resume">
+                                    <i class="fa fa-fw fa-file-pdf-o"></i>
+                                </a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Ryan Chisholm</h3>
-                        <p>
-                            <a>
-                                - Backend Development
-                                <br>
-                                - Fullstack Development
-                                <br>
-                                - Database Development 
-                                <br>
-                                - Mobile App Development
-                                <br>
-                                - Data Analytics 
-                                <br>
-                                - AI & Machine Learning
-                            </a>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -707,10 +740,11 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Theme JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>    <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+    
+    <!-- Projects JavaScript -->
+    <script src="js/projects.js"></script>
 
 </body>
 
