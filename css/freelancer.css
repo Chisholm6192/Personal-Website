@@ -938,6 +938,25 @@ section h2 {
   font-size: 0.9em;
 }
 
+.rectangular-card {
+  width: 100%;
+  background: #121212;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rectangular-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -1007,6 +1026,33 @@ hr.star-light.blue {
 hr.star-light.blue:after {
     background-color: #2d2d2d;
     color: #007bff;
+}
+
+/* Certification Modal Styles */
+#certModal .modal-dialog {
+  max-width: 900px;
+}
+#certModal .modal-content {
+  background: #181818;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+#certModal .modal-header {
+  border-bottom: 1px solid #333;
+}
+#certModal .modal-title {
+  color: #007bff;
+  font-size: 1.5em;
+}
+#certModal .modal-body {
+  padding: 30px 10px 10px 10px;
+  min-height: 60vh;
+  background: #222;
+}
+#certModal iframe {
+  border-radius: 8px;
+  background: #fff;
 }
 
 @media (max-width: 768px) {

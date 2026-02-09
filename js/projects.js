@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-btn');
     const portfolioItems = document.querySelectorAll('.project-card');
 
-    // Show only projects initially
+    // Show only certifications initially
     portfolioItems.forEach(item => {
-        if (item.getAttribute('data-category') !== 'projects') {
+        if (item.getAttribute('data-category') !== 'certifications') {
             item.style.display = 'none';
         }
     });
